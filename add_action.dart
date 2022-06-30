@@ -10,6 +10,7 @@ class AddAction extends StatefulWidget {
 }
 
 class _AddActionState extends State<AddAction> {
+  // This reads the contents of the text field
   final actionController = TextEditingController();
 
   @override

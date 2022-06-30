@@ -35,6 +35,7 @@ class _SignUpState extends State<SignUp> {
               const SizedBox(
                 height: 30,
               ),
+              // email text field
               TextField(
                 decoration: const InputDecoration(
                   border: OutlineInputBorder(),
@@ -45,6 +46,7 @@ class _SignUpState extends State<SignUp> {
               const SizedBox(
                 height: 30,
               ),
+              // Password text field (hidden)
               TextField(
                 obscureText: true,
                 decoration: const InputDecoration(
@@ -68,7 +70,7 @@ class _SignUpState extends State<SignUp> {
                 },
                 child: const Text('Register'),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 15.0,
               ),
               OutlinedButton(
