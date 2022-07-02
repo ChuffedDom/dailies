@@ -46,12 +46,12 @@ class _DailiesAppState extends State<DailiesApp> {
     // Return a Scaffold from the screen needed
     return MaterialApp(
       // This ternary expression is a simplified if statement
-      home: _userSignedIn ? Homescreen() : const SignIn(),
+      home: _userSignedIn ? const Homescreen() : const SignIn(),
       routes: {
-        'homescreen': (context) => Homescreen(),
+        'homescreen': (context) => const Homescreen(),
         'sign-in': (context) => const SignIn(),
         'sign-up': (context) => const SignUp(),
-        'add-action': (context) => AddAction(),
+        'add-action': (context) => const AddAction(),
       },
     );
   }
