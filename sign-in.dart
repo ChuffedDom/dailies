@@ -64,11 +64,12 @@ class _SignInState extends State<SignIn> {
                     email: emailController.text,
                     password: passwordController.text,
                   );
+                  // Check for error here
                   setState(() {});
                 },
                 child: const Text('Sign in'),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 15.0,
               ),
               OutlinedButton(

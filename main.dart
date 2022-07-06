@@ -8,6 +8,7 @@ import 'home_screen.dart';
 import 'sign-up.dart';
 import 'sign-in.dart';
 import 'add_action.dart';
+import 'delete_action.dart';
 
 void main() async {
   // Connect to Firebase
