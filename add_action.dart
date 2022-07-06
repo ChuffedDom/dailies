@@ -39,15 +39,15 @@ class _AddActionState extends State<AddAction> {
                   // Get User ID from FirebaseAuth and Task from field
                   String? userId = FirebaseAuth.instance.currentUser?.uid;
                   String? action = actionController.text;
-                  final newAction = <String, dynamic>{
+                  final newAction = {
                     "uid": userId,
                     "action": action,
+                    "done": false,
                   };
                   FirebaseFirestore.instance
                       .collection('actions')
-                      .add(newAction)
-                      .then((DocumentReference doc) =>
-                          print('DocumentSnapshot added with ID: ${doc.id}'));
+                      .add(newAction);
+                  Navigator.pop(context);
                 },
                 child: const Text('Add'),
               ),
